@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -27,4 +38,15 @@
 
 .section-container img {
     max-width: 100%;
+}
+
+.recommendation-contents {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.recommendation-contents img {
+    width: 10rem;
+    height: 100%;
 }
