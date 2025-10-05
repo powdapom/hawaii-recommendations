@@ -1,0 +1,30 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-image-container {
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.map-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  /* Optional: make it only scroll on larger screens */
+@media (max-width: 768px) {
+    .image-wrapper {
+      max-height: none;     /* Remove height limit on small screens */
+      overflow: visible;    /* Don't scroll on mobile */
+    }
+  }
+.section-container {
+    display: flex;
+}
+
+.section-container img {
+    max-width: 100%;
+}
