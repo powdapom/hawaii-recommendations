@@ -44,10 +44,17 @@ ul {
 .recommendation-contents {
     display: flex;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .recommendation-contents img {
-    width: 30%;
-    height: auto;
+    width: 300px;
+    height: 250px;
+    min-width: 200px;
+    min-height: 50px;
     overflow: hidden;
+}
+
+.recommendation-text {
+    padding-left: 1rem;
 }
