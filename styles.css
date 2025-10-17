@@ -16,7 +16,7 @@ ul {
 
 .map-image-container {
     width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     overflow-y: auto;
 }
 
@@ -25,36 +25,33 @@ ul {
     height: auto;
     display: block;
 }
-  /* Optional: make it only scroll on larger screens */
-@media (max-width: 768px) {
-    .image-wrapper {
-      max-height: none;     /* Remove height limit on small screens */
-      overflow: visible;    /* Don't scroll on mobile */
-    }
-  }
+
 .section-container {
     display: flex;
     padding: 1rem;
 }
 
-.section-container img {
-    max-width: 100%;
-}
-
 .recommendation-contents {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+    padding-top: 1rem;
+   /* border-top: solid 1px rgb(172, 169, 169);*/
+   /* border: solid;*/
+    /*padding: 1rem;*/
 }
 
-.recommendation-contents img {
-    width: 300px;
-    height: 250px;
-    min-width: 200px;
-    min-height: 50px;
-    overflow: hidden;
+
+.recommendation-container h2 {
+    border-left: solid 7px rgb(90, 171, 212);
+    padding-left: 0.5rem;
+}
+
+.recommendation-image-container img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
 }
 
 .recommendation-text {
-    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
