@@ -9,6 +9,13 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(90, 171, 212);
+    transition: 0.3s ease;
+}
+
+
 .main-container {
     display: flex;
     flex-direction: column;
