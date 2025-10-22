@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,17 +15,87 @@
     </header>
     <main>
         <div class="main-container">
-            <div class="map-image-container">
+            <div class="map-image-container" id="rec-navi">
                 <img class="oahu-map" src="assets/oahu-map.png">
             </div>
+            <div class="summary-container">
+                <div class="text-container">
+                <h1>Intro</h1>
+                <p> Oahu, known as "The Gathering Place," is the most populous and dynamic of the Hawaiian Islands. 
+                    The culture is a melting pot of native Hawaiians and immigrants ranging from Japanese, Filipino, Chinese and Korean. 
+                    <br>
+                    <br>
+                    This unique culture and blend of ethnicities gave birth to local food found only in Hawaii like Spam Musubi, Malassada, Ahi Poke, Garlic Shrimp and Loco Moco.
+                    If you get a chance, you should definitely try some of the local dishes out.
+                    <br>
+                    <br>
+                    There's a lot of great places to go. If I had to pick, here are my top 3 recommendations!
+                </p>
+                </div>
+                <div class="top-rec-container">
+                    <ol>
+                        <h4><a href="#ala-moana-center"><li>Ala Moana Center</li></a></h4>
+                        <h4><a href="#haleiwa-joes"><li>Haleiwa Joes</li></a></h4>
+                        <h4><a href="#lanikai-beach"><li>Lanikai Beach</li></a></h4>        
+                    </ol>
+                </div>
+                <div class="navigation-container">
+                    <h2>Locations</h2>
+                    <ul>
+                        <li>
+                            <a href="#waikiki"><h3>Ala Moana & Waikiki</h3></a>
+                        </li>
+                        <li>
+                            <a href="#diamond-head"><h3>Diamond Head</h3></a>
+                        </li>
+                        <li>
+                            <a href="#hawaii-kai"><h3>Hawaii Kai</h3></a>
+                        </li>
+                        <li>
+                            <a href="#kailua"><h3>Kailua</h3></a>
+                        </li>
+                        <li>
+                            <a href="#kaneohe"><h3>Kaneohe</h3></a>
+                        </li>
+                        <li>
+                            <a href="#north-shore"><h3>North Shore</h3></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="section-container">
-                <div class="recommendation-container">
+                <div class="recommendation-container" id="waikiki">
                     <h2>
-                        Waikiki
+                        Ala Moana & Waikiki
                     </h2>
+                    <div class="recommendation-contents" id="ala-moana-center">
+                        <div class="recommendation-image-container">
+                            <img src="assets/ala-moana-shopping.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>
+                                    Ala Moana Center
+                                </h3>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa-solid fa-bag-shopping" style="color: #74C0FC;"></i> Shopping
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/y3AUcD2hyYFDSK6i6" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recommendation-text">
+                        <p>Definitely gotta check Ala Moana out which is the world's largest open air shopping center. Theres 350 plus shops and restaurants to explore, and hopefully you can find some good deals. 
+                            <br> If you have a JCB credit card, you can catch a free <a href="https://waikikitrolley.com/schedule/pink-line-schedule/" target="_blank">Waikiki Trolley pink line ride</a> from Ala Moana to Waikiki.
+                        </p>
+                    </div>
                     <div class="recommendation-contents">
                         <div class="recommendation-image-container">
-                            <img src="assets/hys-steakhouse.png" alt="">
+                            <img src="assets/hys-steakhouse.png" alt=""> 
                         </div>
                         <ul>
                             <li>
@@ -34,7 +105,7 @@
                             </li>
                             <li>
                                 <p>
-                                    Steak
+                                    <i class="fa-solid fa-utensils" style="color: #c0c0c0;"></i> Steak
                                 </p>
                             </li>
                             <li>
@@ -44,6 +115,56 @@
                     </div>
                     <div class="recommendation-text">
                         <p>One of the most popular high end steak houses. It's pricy but if you are looking for something fancy and want to eat at one of Oahu's best steakhouses, this would be the spot.</p>
+                    </div>
+                    <div class="recommendation-contents">
+                        <div class="recommendation-image-container">
+                            <img src="assets/yardhouse.png" alt=""> 
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>
+                                    Yard House
+                                </h3>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa-solid fa-utensils" style="color: #c0c0c0;"></i> American
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/9GAg9P4eNFkuknJn8" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recommendation-text">
+                        <p>If you are looking for a good american restaurant with great beer to go with it, I recommend checking out yardhouse. They have happy hour if you can make it before 5:30pm.
+                            <br>Their menu choices are all tasty but I recall their nachos, onion rings, and chicken wings being really good. 
+                        </p>
+                    </div>
+                   <div class="recommendation-contents">
+                        <div class="recommendation-image-container">
+                            <img src="assets/house-without-a-key.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>
+                                    House Without A Key
+                                </h3>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa-solid fa-utensils" style="color: #c0c0c0;"></i> American
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/6hfCR7ozhUtjhihp8" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recommendation-text">
+                       <p>Good music and a fantastic beach view. I recommend to get a reservation around 5pm so you can get a good table to watch the sunset.
+                         <br> It's pricy but their Mai Tai is famous so I think it's worth it to try one while enjoying the Hawaii vibes.
+                       </p>
                     </div>
                     <div class="recommendation-contents">
                         <div class="recommendation-image-container">
@@ -57,7 +178,7 @@
                             </li>
                             <li>
                                 <p>
-                                    Steak
+                                    <i class="fa-solid fa-utensils" style="color: #c0c0c0;"></i> Steak
                                 </p>
                             </li>
                             <li>
@@ -66,13 +187,38 @@
                         </ul>
                     </div>
                     <div class="recommendation-text">
-                       <p>Great steak that's on the cheaper side. Good to take on the go for lucnh, especially to a nearby beach.</p>
+                       <p>Great steak that's on the cheaper side. Good to take on the go for lunch, especially to a nearby beach.</p>
+                    </div>
+                    <div class="recommendation-contents">
+                        <div class="recommendation-image-container">
+                            <img src="assets/spam-musubi.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>
+                                    Musubi Cafe IYASUME
+                                </h3>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa-solid fa-utensils" style="color: #c0c0c0;"></i> Spam Musubi
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/1cTPP97XczBhyRv4A" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recommendation-text">
+                       <p>If you want to try a famous Hawaii local dish called Spam Musubi, you should go here. This store is now a chain but their "Honten" started here. 
+                        <br>They also have regular onigiris if you are looking for something more traditional.
+                    </p>
                     </div>
                 </div>
             </div>
         </div>
             <div class="section-container">
-                <div class="recommendation-container">
+                <div class="recommendation-container" id="diamond-head">
                     <h2>
                         Diamond Head
                     </h2>
@@ -88,7 +234,7 @@
                             </li>
                             <li>
                                 <p>
-                                    Ahi Poke
+                                    <i class="fa-solid fa-utensils" style="color: #c0c0c0;"></i> Ahi Poke
                                 </p>
                             </li>
                             <li>
@@ -111,7 +257,7 @@
                             </li>
                             <li>
                                 <p>
-                                    Acai Bowl
+                                    <i class="fa-solid fa-utensils" style="color: #c0c0c0;"></i> Acai Bowl
                                 </p>
                             </li>
                             <li>
@@ -120,15 +266,41 @@
                         </ul>
                     </div>
                     <div class="recommendation-text">
-                        <p>Best tasting Acai Bowl in Honolulu. Perfect to get after a beach session.</p>
+                        <p>Best tasting Acai Bowl in Honolulu in my opinion. Perfect afternoon snack to quench your thirst and sweet tooth after a long day at the beach.</p>
                     </div>
                 </div>
             </div>
         <div class="section-container">
-                <div class="recommendation-container">
+                <div class="recommendation-container" id="hawaii-kai">
                     <h2>
                         Hawaii Kai
                     </h2>
+                    <div class="recommendation-contents">
+                        <div class="recommendation-image-container">
+                            <img src="assets/costco-menu.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>
+                                    Costco Hawaii Kai
+                                </h3>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa-solid fa-bag-shopping" style="color: #74C0FC;"></i> Shopping
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/uP4adn8Jrd9ScPC66" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recommendation-text">
+                        <p>If you have Japanese Costco card you should be able to get inside. 
+                            <br>It's better to visit if you're in Hawaii Kai area with a car since you can grab a quick meal and some gifts also on the way back after the beach.
+                            <br>I don't know why but Costco foodcourt tastes better after the beach and I recommend to try the Chicken Bake and Sundae if you get a chance to go.
+                        </p>
+                    </div>
                     <div class="recommendation-contents">
                         <div class="recommendation-image-container">
                             <img src="assets/koko-head-hike.png" alt="">
@@ -141,11 +313,11 @@
                             </li>
                             <li>
                                 <p>
-                                    Hiking Trail
+                                    <i class="fa-solid fa-sun" style="color: gold;"></i> Hiking Trail
                                 </p>
                             </li>
                             <li>
-                                <a href="https://maps.app.goo.gl/9JT1S6eToCkBZND6A" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                                <a href="https://maps.app.goo.gl/cw1hzsXdoq54bSJt9" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
                             </li>
                         </ul>
                     </div>
@@ -164,11 +336,11 @@
                             </li>
                             <li>
                                 <p>
-                                    Beach
+                                    <i class="fa-solid fa-sun" style="color: gold;"></i> Beach
                                 </p>
                             </li>
                             <li>
-                                <a href="https://maps.app.goo.gl/eAf3ZnV8SJSwX7R27" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                                <a href="https://maps.app.goo.gl/qrhHNtNcdiy9L4FG7" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
                             </li>
                         </ul>
                     </div>
@@ -178,11 +350,11 @@
                 </div>
             </div>
             <div class="section-container">
-                <div class="recommendation-container">
+                <div class="recommendation-container" id="kailua">
                     <h2>
                         Kailua
                     </h2>
-                    <div class="recommendation-contents">
+                    <div class="recommendation-contents" id="lanikai-beach">
                         <div class="recommendation-image-container">
                             <img src="assets/lanikai-beach.png" alt="">
                         </div>
@@ -194,7 +366,7 @@
                             </li>
                             <li>
                                 <p>
-                                    Beach
+                                    <i class="fa-solid fa-sun" style="color: gold;"></i> Beach
                                 </p>
                             </li>
                             <li>
@@ -210,36 +382,36 @@
                     </div>
                     <div class="recommendation-contents">
                         <div class="recommendation-image-container">
-                            <img src="assets/steak-shack.png" alt="">
+                            <img src="assets/pillbox-trail.png" alt="">
                         </div>
                         <ul>
                             <li>
                                 <h3>
-                                    Steak Shack
+                                    Pillbox Trail
                                 </h3>
                             </li>
                             <li>
                                 <p>
-                                    Steak
+                                    <i class="fa-solid fa-sun" style="color: gold;"></i> Hiking Trail
                                 </p>
                             </li>
                             <li>
-                                <a href="https://maps.app.goo.gl/VWCG2KZqpKDuBZQRA" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                                <a href="https://maps.app.goo.gl/7w7qXwNKNtsayi93A" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
                             </li>
                         </ul>
                     </div>
                     <div class="recommendation-text">
-                       <p>Great steak that's on the cheaper side. Good to take on the go for lucnh, especially to a nearby beach!</p>
+                       <p>You can get a fantastic view of the Lanikai beach area below. Definitely one of the fun hikes I've experienced. I recommend going on this hike and then going to the beach after.</p>
                     </div>
                 </div>
             </div>
             <div class="section-container">
-                <div class="recommendation-container">
+                <div class="recommendation-container" id="kaneohe">
                     <h2>
                         Kaneohe
                     </h2>
                     <div class="recommendation-contents">
-                        <div class="recommendation-image-container">
+                        <div class="recommendation-image-container" id="haleiwa-joes">
                             <img src="assets/haleiwa-joes2.png" alt="">
                         </div>
                         <ul>
@@ -259,7 +431,9 @@
                         </ul>
                     </div>
                     <div class="recommendation-text">
-                        <p>One of the most popular high end steak houses. It's pricy but if you are looking for something fancy and want to eat a nice steak. This would be the spot.</p>
+                        <p>They have good seafood and steak options, they try to source locally and the scenery is amazing here. 
+                            <br> If you go, you have to try get the prime rib for sure and they don't take reservations so try to go earlier to open time which is from 4pm.
+                        </p>
                     </div>
                     <div class="recommendation-contents">
                         <div class="recommendation-image-container">
@@ -273,7 +447,7 @@
                             </li>
                             <li>
                                 <p>
-                                    Outdoor Activity
+                                    <i class="fa-solid fa-sun" style="color: gold;"></i> Outdoor Activity
                                 </p>
                             </li>
                             <li>
@@ -282,14 +456,14 @@
                         </ul>
                     </div>
                     <div class="recommendation-text">
-                       <p>Really great scenery, this location is also used as a filming location for a lot of famous movies like Jurassic Park.
-                            <br>They have a lot of fun outdoor activities like Horseback riding and UTV tours. I recommend to check out their tours and <a href="https://book.singenuity.com/383/catalog/activities" target="_blank">make a reservation</a> in advance from here if you're interested.
+                       <p>Amazing mountain views, this location is also used as a filming location for a lot of famous movies like Jurassic Park.
+                            <br>They have a ton of outdoor activities to choose from such as Horseback riding and UTV tours. I recommend to check out their tours and <a href="https://book.singenuity.com/383/catalog/activities" target="_blank">make a reservation</a> in advance from here if you're interested.
                        </p>
                     </div>
                 </div>
             </div>
             <div class="section-container">
-                <div class="recommendation-container">
+                <div class="recommendation-container" id="north-shore">
                     <h2>
                         North Shore
                     </h2>
@@ -340,8 +514,32 @@
                     <div class="recommendation-text">
                        <p>One of the most famous shave ice shops on the island. If you're in the North Shore and get a chance to go with a sweet tooth, I recommend checking this shop out.</p>
                     </div>
+                    <div class="recommendation-contents">
+                        <div class="recommendation-image-container">
+                            <img src="assets/matsumoto-shave-ice.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>
+                                    Shrimp Trucks
+                                </h3>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa-solid fa-utensils" style="color: #c0c0c0;"></i> Garlic Shrimp
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/CsnG74un9mwEiDGfA" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ff8080;"></i> Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recommendation-text">
+                       <p>One of the most famous shave ice shops on the island. If you're in the North Shore and get a chance to go with a sweet tooth, I recommend checking this shop out.</p>
+                    </div>
                 </div>
             </div>
+            <div id="pagetop"><a href="#rec-navi"></a></div>
         </div>
     </main>
     <footer>
